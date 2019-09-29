@@ -12,3 +12,10 @@
 ## Reference
  - https://www.kaggle.com/mcbean/fruit-classification-w-nn
  - https://www.kaggle.com/shivamb/cnn-architectures-vgg-resnet-inception-tl
+
+## How to run?
+Execute "python main.py"
+
+### Modifications
+ - Change input/test, input/training and input/validation files to train your NN differently.
+
