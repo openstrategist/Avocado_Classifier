@@ -23,17 +23,17 @@ print("1) Imported training and validation data. Unique labels={}, X_flat_train 
 # nnTypeOne.train_and_evaluate(X_flat_train, X_flat_test, Y_train, Y_test)
 # # nnTypeOne.predict("./input/test", id_to_label_dict)	# problem: freezes program
 
-# # 2B) NNTypeTwo
-# nnTypeTwo = NNTypeTwo(verbose=0)
-# nnTypeTwo.create(X_flat_train, len(unique_labels))
-# nnTypeTwo.train_and_evaluate(X_flat_train, X_flat_test, Y_train, Y_test)
-# # nnTypeTwo.predict("./input/test", id_to_label_dict)	# problem: freezes program
+# 2B) NNTypeTwo
+nnTypeTwo = NNTypeTwo(verbose=0)
+nnTypeTwo.create(X_flat_train, len(unique_labels))
+nnTypeTwo.train_and_evaluate(X_flat_train, X_flat_test, Y_train, Y_test)
+nnTypeTwo.predict("./input/test", id_to_label_dict)	# problem: freezes program
 
-# 2C) NNTypeThree (epoch=1)
-nnTypeThree = NNTypeThree(verbose=0)
-nnTypeThree.create(X_train, len(unique_labels))
-nnTypeThree.train_and_evaluate(X_train, X_test, Y_train, Y_test, epochs=1)
-nnTypeThree.predict("./input/test", id_to_label_dict)	# problem: freezes program
+# # 2C) NNTypeThree (epoch=1)
+# nnTypeThree = NNTypeThree(verbose=0)
+# nnTypeThree.create(X_train, len(unique_labels))
+# nnTypeThree.train_and_evaluate(X_train, X_test, Y_train, Y_test, epochs=1)
+# nnTypeThree.predict("./input/test", id_to_label_dict)	# problem: freezes program
 
 # # 2D) NNTypeThree_v2 (epoch=10)
 # nnTypeThree_v2 = NNTypeThree(verbose=0)
