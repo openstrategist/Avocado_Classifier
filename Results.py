@@ -26,7 +26,7 @@ class Results:
 					name = id_to_label[predictions[count]]
 				else:
 					name = "i={}".format(count)
-				axx.set_title(name)
+				axx.set_title(name, fontsize=10)
 
 				# Hide axis labels
 				axx.get_xaxis().set_visible(False)
@@ -45,7 +45,7 @@ class Results:
 # Testing Purposes
 def testRun():
 	test_images = PrepImage.get_imgs("./input/test")
-	Results.show(test_images[1:9], predictions=None, id_to_label=None)
+	Results.show(test_images, predictions=None, id_to_label=None)
 
 if __name__ == "__main__":
 	testRun()
