@@ -14,7 +14,15 @@
  - https://www.kaggle.com/shivamb/cnn-architectures-vgg-resnet-inception-tl
 
 ## How to run?
-Execute "python main.py"
+ - Install libraries:
+ 	 - matplotlib
+ 	 - numpy
+ 	 - pandas
+ 	 - tensorflow
+ 	 - keras
+ 	 - glob
+ 	 - cv2 (opencv)
+ - Execute "python main.py"
 
 ### Modifications
  - Change input/test, input/training and input/validation files to train your NN differently.
@@ -22,4 +30,5 @@ Execute "python main.py"
 # TODO
  - convert conv2D NN into classes.
  - Predict function freezes the program. Need to keep running and show next figure -> uncomment step 3 of main.py once this is fixed.
- 
+ - Transfer Learning?
+

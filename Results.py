@@ -1,7 +1,6 @@
 from PrepImage import PrepImage
 import matplotlib.pyplot as plt
 
-
 class Results:
 	@staticmethod
 	def show(images, predictions=None, id_to_label=None, imgs_per_row=4):

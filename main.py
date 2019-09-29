@@ -18,25 +18,25 @@ print("1) Imported training and validation data. Unique labels={}, X_flat_train 
 
 # 2: Run Neural Networks
 # # 2A) NNTypeOne
-# nnTypeOne = NNTypeOne(verbose=0)
+# nnTypeOne = NNTypeOne(verbose=VERBOSE)
 # nnTypeOne.create(X_flat_train, len(unique_labels))
 # nnTypeOne.train_and_evaluate(X_flat_train, X_flat_test, Y_train, Y_test)
 # # nnTypeOne.predict("./input/test", id_to_label_dict)	# problem: freezes program
 
 # 2B) NNTypeTwo
-nnTypeTwo = NNTypeTwo(verbose=0)
-nnTypeTwo.create(X_flat_train, len(unique_labels))
-nnTypeTwo.train_and_evaluate(X_flat_train, X_flat_test, Y_train, Y_test)
-nnTypeTwo.predict("./input/test", id_to_label_dict)	# problem: freezes program
+# nnTypeTwo = NNTypeTwo(verbose=VERBOSE)
+# nnTypeTwo.create(X_flat_train, len(unique_labels))
+# nnTypeTwo.train_and_evaluate(X_flat_train, X_flat_test, Y_train, Y_test)
+# nnTypeTwo.predict("./input/test", id_to_label_dict)	# problem: freezes program
 
 # # 2C) NNTypeThree (epoch=1)
-# nnTypeThree = NNTypeThree(verbose=0)
+# nnTypeThree = NNTypeThree(verbose=VERBOSE)
 # nnTypeThree.create(X_train, len(unique_labels))
 # nnTypeThree.train_and_evaluate(X_train, X_test, Y_train, Y_test, epochs=1)
 # nnTypeThree.predict("./input/test", id_to_label_dict)	# problem: freezes program
 
 # # 2D) NNTypeThree_v2 (epoch=10)
-# nnTypeThree_v2 = NNTypeThree(verbose=0)
-# nnTypeThree_v2.create(X_train, len(unique_labels))
-# nnTypeThree_v2.train_and_evaluate(X_train, X_test, Y_train, Y_test, epochs=10)
-# # nnTypeThree_v2.predict("./input/test", id_to_label_dict)	# problem: freezes program
+nnTypeThree_v2 = NNTypeThree(verbose=VERBOSE)
+nnTypeThree_v2.create(X_train, len(unique_labels))
+nnTypeThree_v2.train_and_evaluate(X_train, X_test, Y_train, Y_test, epochs=10)
+nnTypeThree_v2.predict("./input/test", id_to_label_dict)	# problem: freezes program
