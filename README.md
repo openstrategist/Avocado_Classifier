@@ -31,4 +31,5 @@
  - convert conv2D NN into classes.
  - Predict function freezes the program. Need to keep running and show next figure -> uncomment step 3 of main.py once this is fixed.
  - Transfer Learning?
+ - Better .gitignore
 
