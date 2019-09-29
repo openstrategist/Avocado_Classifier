@@ -10,5 +10,5 @@
  - Detect avocado in a normal image or a box bounded zoomed in image.
 
 ## Reference
-https://www.kaggle.com/mcbean/fruit-classification-w-nn
-https://www.kaggle.com/shivamb/cnn-architectures-vgg-resnet-inception-tl
+ - https://www.kaggle.com/mcbean/fruit-classification-w-nn
+ - https://www.kaggle.com/shivamb/cnn-architectures-vgg-resnet-inception-tl
