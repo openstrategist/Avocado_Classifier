@@ -4,6 +4,7 @@ from Results import Results
 from NNTypeOne import NNTypeOne
 from NNTypeTwo import NNTypeTwo
 from NNTypeThree import NNTypeThree
+from NNTypeFour import NNTypeFour
 
 # CONSTANTS DEFINITION
 VERBOSE = 0	# {0, 1}
@@ -36,7 +37,12 @@ print("1) Imported training and validation data. Unique labels={}, X_flat_train 
 # nnTypeThree.predict("./input/test", id_to_label_dict)	# problem: freezes program
 
 # # 2D) NNTypeThree_v2 (epoch=10)
-nnTypeThree_v2 = NNTypeThree(verbose=VERBOSE)
-nnTypeThree_v2.create(X_train, len(unique_labels))
-nnTypeThree_v2.train_and_evaluate(X_train, X_test, Y_train, Y_test, epochs=10)
-nnTypeThree_v2.predict("./input/test", id_to_label_dict)	# problem: freezes program
+# nnTypeThree_v2 = NNTypeThree(verbose=VERBOSE)
+# nnTypeThree_v2.create(X_train, len(unique_labels))
+# nnTypeThree_v2.train_and_evaluate(X_train, X_test, Y_train, Y_test, epochs=10)
+# nnTypeThree_v2.predict("./input/test", id_to_label_dict)	# problem: freezes program
+
+nnTypeFour = NNTypeFour(verbose=VERBOSE)
+nnTypeFour.create(X_train, len(unique_labels))
+nnTypeFour.train_and_evaluate(X_train, X_test, Y_train, Y_test, epochs=10)
+#nnTypeFour.predict("./input/test", id_to_label_dict)	# problem: freezes program
