@@ -22,13 +22,13 @@ history_dense = model_dense.fit(X_flat_train, Y_train,
 
 # C: Evaluate Accuracy of NN
 score = model_dense.evaluate(X_flat_test, Y_test, verbose=VERBOSE)
-print("3) Evaluating NN: Test loss={}, Test accuracy={}".format(score[0], score[1]))
+print("3) Evaluating NN: Test loss={:.3f}, Test accuracy={:.3f}".format(score[0], score[1]))
 
 # D: Predict using NN
 print("4) Running Prediction")
 process_imgs, test_images = PrepImage.prep_test_data("./input/test")
 predictions = model_dense.predict_classes(process_imgs,verbose=VERBOSE)
-Results.show(predictions, test_images, id_to_label_dict)
+Results.show(test_images, predictions=predictions, id_to_label=id_to_label_dict)
 print(predictions)
 
 

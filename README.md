@@ -3,7 +3,7 @@
  - Using Keras (over tensorflow) to test image classification over ripe and non-ripe avocados.
  - Adding Apples and Collection of Apple images to classify when the object is not an avocado.
  - Dataset collected from Kaggle (Fruit 360 Dataset)
- - CNN Code based on mcbean's fruit-classification-w-nn and shivamb's cnn-architectures-vgg-resnet-inception-tl
+ - CNN Code based on mcbean's fruit-classification-w-nn(https://www.kaggle.com/mcbean/fruit-classification-w-nn) and shivamb's cnn-architectures-vgg-resnet-inception-tl(https://www.kaggle.com/shivamb/cnn-architectures-vgg-resnet-inception-tl)
 
 ## Future Goals
  - Detect categories of avocado ripeness.
