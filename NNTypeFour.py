@@ -1,14 +1,8 @@
 # Reference: https://www.kaggle.com/suniliitb96/tutorial-keras-transfer-learning-with-resnet50
+# optimizer -> try using atom
 
 from Results import Results
 from PrepImage import PrepImage
-
-# from keras.models import Sequential
-# from keras.optimizers import RMSprop, SGD
-# from keras.layers import Input, Conv2D, MaxPooling2D
-# from keras.layers import Dense, Flatten
-# from keras.models import Model
-# from keras.preprocessing import image
 
 from tensorflow.python.keras.applications import ResNet50
 from tensorflow.python.keras.models import Sequential
@@ -92,7 +86,6 @@ class NNTypeFour:
 		)
 
 		# model.load_weights("../working/best.hdf5")
-
 		# score = self.model.evaluate(imgs, Y_test, verbose=self.verbose)
 
 		plt.figure(1, figsize = (15,8)) 
